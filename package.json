@@ -1,0 +1,30 @@
+{
+  "name": "ts-intro",
+  "version": "1.0.0",
+  "description": "TypeScript intro",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "lint-all": "npm run typecheck && npm run lint",
+    "typecheck": "tsc",
+    "build": "vite build",
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "Sergey Koksharov <gentoosiastic@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-tsconfig-paths": "^4.3.1"
+  }
+}
